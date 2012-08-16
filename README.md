@@ -97,7 +97,7 @@ When UnitTest is executed, $test might already been defined.
 Story framework is executed by the browser access. Data base ($test) for the test cannot access to without the change in the setting.
 
 When test step registers the test data, Bdd plugin uses $test. Therefore, the definition is needed without fail. My recommendation is that the data base setting is switched by the environment like "Easy peasy database config" of Bakery. 
-"http://bakery.cakephp.org/articles/joelmoss/2006/11/16/easy-peasy-database-config":http://bakery.cakephp.org/articles/joelmoss/2006/11/16/easy-peasy-database-config
+http://bakery.cakephp.org/articles/joelmoss/2006/11/16/easy-peasy-database-config
 
 In sample application (sample) of the inclusion, it switch based on the accessed server name.
 When the accessed host name is test.localhost, the data base for test is used. 
@@ -156,6 +156,6 @@ Please note it.
 
 ## Sample Appliacation and Test code
 
-"https://github.com/sizuhiko/BddExampleApp":https://github.com/sizuhiko/BddExampleApp
+https://github.com/sizuhiko/BddExampleApp
 
 It include English and Japanese features and some specs.
