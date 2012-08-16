@@ -1,0 +1,66 @@
+{
+    "name": "sizuhiko/Bdd",
+    "description": "BddPlugin for CakePHP2",
+    "authors": [
+        {
+            "name": "sizuhiko",
+            "email": "sizuhiko@gmail.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "pear",
+            "url": "http://pear.phpunit.de"
+        },
+        {
+            "type": "pear",
+            "url": "http://pear.php.net"
+        },
+        {
+            "type": "package",
+            "package":{
+                "name": "hamcrest/Hamcrest",
+                "version": "1.1.0",
+                "dist": {
+                    "url": "http://hamcrest.googlecode.com/files/hamcrest-php-1.1.0.zip",
+                    "type": "zip"
+                },
+                "autoload": {
+                    "classmap": ["Hamcrest-1.1.0/"]
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package":{
+                "name": "sizuhiko/Spec-PHP",
+                "version": "0.9.5.2.dev",
+                "dist": {
+                    "url": "https://github.com/sizuhiko/Spec-PHP/zipball/0.9.5.2.dev",
+                    "type": "zip"
+                },
+                "source": {
+                    "url": "https://github.com/sizuhiko/Spec-PHP.git",
+                    "type": "git",
+                    "reference": "develop"
+                },
+                "autoload": {
+                    "psr-0": {"DrSlump": "library/"}
+                }
+            }
+        }
+    ],    
+    "require": {
+        "behat/mink-extension": "v1.0.0",
+        "pear-phpunit/Object_Freezer": "*",
+        "pear-pear/Console_CommandLine": "*",
+        "hamcrest/Hamcrest": "*",
+        "sizuhiko/Spec-PHP": "*"
+    },
+
+    "require-dev": { 
+        "behat/mink-goutte-driver": "*",
+        "behat/mink-selenium-driver": "*"
+    },
+    "minimum-stability" : "dev"
+}

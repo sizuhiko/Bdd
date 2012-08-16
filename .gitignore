@@ -3,3 +3,5 @@ config/database.php
 app/tmp/*
 app/config/database.php
 !empty
+composer.phar
+vendor/*
