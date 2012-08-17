@@ -1,5 +1,5 @@
 {
-    "hash": "390514f0fe119f3f789ae73c0de33973",
+    "hash": "0a2bb40bb66cc4d5245f0165106c3a7e",
     "packages": [
         {
             "package": "behat/behat",
@@ -31,7 +31,7 @@
         },
         {
             "package": "sizuhiko/Spec-PHP",
-            "version": "0.9.5.2.dev",
+            "version": "0.9.5.3.dev",
             "source-reference": "develop"
         },
         {
