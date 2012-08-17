@@ -34,9 +34,9 @@
             "type": "package",
             "package":{
                 "name": "sizuhiko/Spec-PHP",
-                "version": "0.9.5.2.dev",
+                "version": "0.9.5.3.dev",
                 "dist": {
-                    "url": "https://github.com/sizuhiko/Spec-PHP/zipball/0.9.5.2.dev",
+                    "url": "https://github.com/sizuhiko/Spec-PHP/zipball/0.9.5.3.dev",
                     "type": "zip"
                 },
                 "source": {
