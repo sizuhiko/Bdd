@@ -50,39 +50,37 @@ Followings dependency installed by Composer.
 
 Under the plugins directory of CakePHP root, execute the following commands. 
 
-<pre><code>
+```sh
 cd plugins
 git clone git@github.com:sizuhiko/Bdd.git
 cd Bdd
 curl -s https://getcomposer.org/installer | php
 php composer.phar install --dev
 cd ..
-</code></pre>
+```
 
 Then, add the following code in app/Config/bootstrap.php
 
-<pre><code>
+```php
 CakePlugin::load('Bdd');
-</code></pre>
+```
 
 Next, the following commands are executed. (on root of CakePHP)
-<pre><code>
+```sh
 ls
   app  index.php  lib  plugins  vendors
 
 lib/Cake/Console/cake Bdd.init
-</code></pre>
+```
 
 The initial install is an end.
 
 ### Configuration
 
-Setting your application root url into behat.yml.
-<pre><code>
-app/Config/behat.yml
-
+Setting your application root url into app/Config/behat.yml.
+```yaml
 base_url: http://test.localhost:8888/application-name/
-</code></pre>
+```
 
 This specifies the host name, the port number, and the application name, etc. by the one to set passing the route of the application. Setting it to the host name that can be identified to the test environment as much as possible is recommended. 
 
@@ -113,7 +111,7 @@ Bdd.story has two methods that can be used with the step file.
 * truncateModel() : Method for deletion of test data. 
 * getModel() Method of getting model to register test data. 
 
-<pre><code>
+```php
 $steps->Given('/^there is a post:$/', function($world, $table) {
   $hash = $table->getHash();
   $world->truncateModel('Post');
@@ -123,39 +121,41 @@ $steps->Given('/^there is a post:$/', function($world, $table) {
 	$post->save();
   }
 });
-</code></pre>
+```
 
 #### Into the spec file on spec framework
 
 Bdd.spec can use fixture of CakePHP.
 In before block, can use `$W->fixtures = array(....)` looks like `$fixtures = array(...)` on your CakeTestCase.
 
-<pre><code>
+```php
 describe "Post"
   context "with fixture"
     before
       $W->fixtures = array('app.post');
     end
     ....
-</code></pre>
+```
 
 ### Let's execute it. 
 
 Move to the directory CakePHP root(including lib, app, and plugins), and next, execute the following commands.
 
-@lib/Cake/Console/cake Bdd.spec@
-@lib/Cake/Console/cake Bdd.story@
+`lib/Cake/Console/cake Bdd.spec`
+`lib/Cake/Console/cake Bdd.story`
 
 You can use any of original framework options.
 Please check 
-@lib/Cake/Console/cake Bdd.story --help@
-@lib/Cake/Console/cake Bdd.spec --help@
+`lib/Cake/Console/cake Bdd.story --help`
+`lib/Cake/Console/cake Bdd.spec --help`
 
 The command operates only by the CakePHP root directory.
 Please note it.
 
-## Sample Appliacation and Test code
+## Sample Appliacation and Test code, Tutorial
 
 https://github.com/sizuhiko/BddExampleApp
 
 It include English and Japanese features and some specs.
+And the README.md is Bdd plugin tutorial !!
+
