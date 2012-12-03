@@ -51,7 +51,7 @@
         }
     ],    
     "require": {
-        "behat/mink-extension": "v1.0.0",
+        "behat/mink-extension": "*",
         "pear-phpunit/Object_Freezer": "*",
         "pear-pear/Console_CommandLine": "*",
         "hamcrest/Hamcrest": "*",
