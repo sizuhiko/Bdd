@@ -4,6 +4,9 @@ default:
   extensions:
     Behat\MinkExtension\Extension:
       base_url:  'http://test.localhost:8888/application-name/'
-      goutte:    ~
+      goutte:
+        guzzle_parameters:
+          request.params:
+            redirect.disable: true
       selenium: ~
       javascript_session: selenium

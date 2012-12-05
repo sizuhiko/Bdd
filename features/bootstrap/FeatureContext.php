@@ -1,7 +1,7 @@
 <?php # features/bootstrap/FeatureContext.php
 
-use Behat\Behat\Context\ClosuredContextInterface;
-use Behat\MinkExtension\Context\MinkContext;
+use Behat\Behat\Context\ClosuredContextInterface,
+    Behat\Mink\Behat\Context\MinkContext;
 
 if (file_exists(__DIR__ . '/../support/bootstrap.php')) {
     require_once __DIR__ . '/../support/bootstrap.php';

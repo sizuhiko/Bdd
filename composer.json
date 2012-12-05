@@ -48,6 +48,10 @@
                     "psr-0": {"DrSlump": "library/"}
                 }
             }
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/sizuhiko/CommonContexts.git"
         }
     ],    
     "require": {
@@ -55,7 +59,8 @@
         "pear-phpunit/Object_Freezer": "*",
         "pear-pear/Console_CommandLine": "*",
         "hamcrest/Hamcrest": "*",
-        "sizuhiko/Spec-PHP": "*"
+        "sizuhiko/Spec-PHP": "*",
+        "behat/common-contexts": "dev-ChangeUriBasedComparison"
     },
 
     "require-dev": { 

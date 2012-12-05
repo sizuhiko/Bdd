@@ -1,5 +1,5 @@
 {
-    "hash": "cb179be1bed57a0c91ff1490c4e4e089",
+    "hash": "da52c4eda091ba5625dda9f790164c87",
     "packages": [
         {
             "name": "behat/behat",
@@ -60,6 +60,75 @@
                 "BDD",
                 "Behat"
             ]
+        },
+        {
+            "name": "behat/common-contexts",
+            "version": "dev-ChangeUriBasedComparison",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sizuhiko/CommonContexts.git",
+                "reference": "2187a5b628cbea4bc96755ec5c30bc46736a48b5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/sizuhiko/CommonContexts/archive/2187a5b628cbea4bc96755ec5c30bc46736a48b5.zip",
+                "reference": "2187a5b628cbea4bc96755ec5c30bc46736a48b5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.1",
+                "behat/behat": ">=2.2.2"
+            },
+            "suggest": {
+                "behat/symfony2-extension": "*",
+                "behat/mink-extension": "*",
+                "doctrine/doctrine-bundle": "*",
+                "kriswallsmith/buzz": ">=0.5.0"
+            },
+            "time": "2012-12-05 01:49:40",
+            "type": "library",
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "Behat\\CommonContexts": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Konstantin Kudryashov",
+                    "email": "ever.zet@gmail.com",
+                    "homepage": "http://everzet.com"
+                },
+                {
+                    "name": "Johannes M. Schmitt",
+                    "email": "schmittjoh@gmail.com",
+                    "homepage": "https://github.com/schmittjoh"
+                },
+                {
+                    "name": "Jakub Zalas",
+                    "email": "jakub@zalas.pl",
+                    "homepage": "http://www.zalas.eu/"
+                },
+                {
+                    "name": "Geoffrey Bachelet",
+                    "email": "geoffrey.bachelet@gmail.com",
+                    "homepage": "https://github.com/ubermuda"
+                }
+            ],
+            "description": "Commonly used contexts for Behat",
+            "homepage": "http://behat.org/",
+            "keywords": [
+                "BDD",
+                "Behat",
+                "Symfony2",
+                "Context"
+            ],
+            "support": {
+                "source": "https://github.com/sizuhiko/CommonContexts/tree/ChangeUriBasedComparison"
+            }
         },
         {
             "name": "behat/gherkin",
@@ -189,12 +258,12 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/Behat/MinkExtension.git",
-                "reference": "880fc457e056924694f7bb396842548ef2d8b3a1"
+                "reference": "064cb78ff179e38a9b4c005c9b4a766e826873df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/Behat/MinkExtension/archive/880fc457e056924694f7bb396842548ef2d8b3a1.zip",
-                "reference": "880fc457e056924694f7bb396842548ef2d8b3a1",
+                "url": "https://github.com/Behat/MinkExtension/archive/064cb78ff179e38a9b4c005c9b4a766e826873df.zip",
+                "reference": "064cb78ff179e38a9b4c005c9b4a766e826873df",
                 "shasum": ""
             },
             "require": {
@@ -205,7 +274,7 @@
             "require-dev": {
                 "behat/mink-goutte-driver": "*"
             },
-            "time": "2012-11-21 00:22:28",
+            "time": "2012-12-05 00:48:24",
             "type": "behat-extension",
             "installation-source": "source",
             "autoload": {
@@ -930,12 +999,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Goutte",
-                "reference": "7e87fd73ffd644ba0fe6c7ac01a9e1abd4105d99"
+                "reference": "70c036b3ffe33521b95b8223bf062ae007da619f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/fabpot/Goutte/archive/7e87fd73ffd644ba0fe6c7ac01a9e1abd4105d99.zip",
-                "reference": "7e87fd73ffd644ba0fe6c7ac01a9e1abd4105d99",
+                "url": "https://github.com/fabpot/Goutte/archive/70c036b3ffe33521b95b8223bf062ae007da619f.zip",
+                "reference": "70c036b3ffe33521b95b8223bf062ae007da619f",
                 "shasum": ""
             },
             "require": {
@@ -948,7 +1017,7 @@
                 "ext-curl": "*",
                 "guzzle/guzzle": "3.0.*"
             },
-            "time": "2012-11-19 07:09:26",
+            "time": "2012-12-03 13:38:32",
             "type": "application",
             "extra": {
                 "branch-alias": {
@@ -1072,12 +1141,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/BrowserKit",
-                "reference": "v2.1.4"
+                "reference": "6623d84e4879fe6840c5a2efef2496faab5d637d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/BrowserKit/archive/v2.1.4.zip",
-                "reference": "v2.1.4",
+                "url": "https://github.com/symfony/BrowserKit/archive/6623d84e4879fe6840c5a2efef2496faab5d637d.zip",
+                "reference": "6623d84e4879fe6840c5a2efef2496faab5d637d",
                 "shasum": ""
             },
             "require": {
@@ -1091,7 +1160,7 @@
             "suggest": {
                 "symfony/process": "2.1.*"
             },
-            "time": "2012-11-08 09:51:48",
+            "time": "2012-12-03 15:25:15",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1228,7 +1297,7 @@
 
     ],
     "minimum-stability": "dev",
-    "stability-flags": [
-
-    ]
+    "stability-flags": {
+        "behat/common-contexts": 20
+    }
 }
