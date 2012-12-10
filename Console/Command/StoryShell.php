@@ -17,7 +17,7 @@ class StoryShell extends Shell {
         $args = $_SERVER['argv'];
         do {
             array_shift($args);
-        } while($args[0] != 'Bdd.story');
+        } while(strtolower($args[0]) != 'bdd.story');
 
         // Internal encoding to utf8
         mb_internal_encoding('utf8');
