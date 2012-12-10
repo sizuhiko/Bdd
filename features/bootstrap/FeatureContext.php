@@ -1,7 +1,9 @@
 <?php # features/bootstrap/FeatureContext.php
 
-use Behat\Behat\Context\ClosuredContextInterface,
-    Behat\Mink\Behat\Context\MinkContext;
+use Behat\Behat\Context\ClosuredContextInterface;
+use Behat\MinkExtension\Context\MinkContext;
+
+use Behat\CommonContexts\MinkRedirectContext;
 
 if (file_exists(__DIR__ . '/../support/bootstrap.php')) {
     require_once __DIR__ . '/../support/bootstrap.php';
@@ -18,6 +20,7 @@ class FeatureContext extends MinkContext implements ClosuredContextInterface
             $world = $this;
             require(__DIR__ . '/../support/env.php');
         }
+        $this->useContext('MinkRedirectContext', new MinkRedirectContext());
     }
 
     public function getStepDefinitionResources()
