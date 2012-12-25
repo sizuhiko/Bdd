@@ -2,8 +2,8 @@
 
 require_once 'PHPUnit/Autoload.php';
 require_once 'PHP/CodeCoverage/Filter.php';
-require_once 'Console/CommandLine/Result.php';
 require dirname(dirname(dirname(__FILE__))).DS.'vendor/autoload.php';
+require_once 'Console/CommandLine/Result.php';
 
 App::uses('CakeSpec', 'Bdd.Console');
 App::uses('ControllerSpec', 'Bdd.Console');
