@@ -8,5 +8,15 @@ default:
         guzzle_parameters:
           request.params:
             redirect.disable: true
+      # 
+      # switch disable followings if use behat/mink-selenium2-driver 
+      #
       selenium: ~
       javascript_session: selenium
+      # 
+      # switch enable followings if use behat/mink-selenium2-driver 
+      #
+      # javascript_session: selenium2
+      # browser_name: 'firefox'
+      # selenium2:                    
+      #   capabilities: { "browser": "firefox"}
