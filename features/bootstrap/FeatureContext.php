@@ -16,21 +16,21 @@ class FeatureContext extends MinkContext implements ClosuredContextInterface
     public function __construct(array $parameters) {
         $this->parameters = $parameters;
 
-        if (file_exists(__DIR__ . '/../support/env.php')) {
+        if (file_exists(__DIR__ . '/../Support/env.php')) {
             $world = $this;
-            require(__DIR__ . '/../support/env.php');
+            require(__DIR__ . '/../Support/env.php');
         }
         $this->useContext('MinkRedirectContext', new MinkRedirectContext());
     }
 
     public function getStepDefinitionResources()
     {
-        return glob(__DIR__.'/../steps/*.php');
+        return glob(__DIR__.'/../Step/*.php');
     }
 
     public function getHookDefinitionResources()
     {
-        return array(__DIR__ . '/../support/hooks.php');
+        return array(__DIR__ . '/../Support/hooks.php');
     }
 
     public function locatePath($path) {
