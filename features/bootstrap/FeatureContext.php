@@ -5,6 +5,8 @@ use Behat\MinkExtension\Context\MinkContext;
 
 use Behat\CommonContexts\MinkRedirectContext;
 
+use Symfony\Component\Finder\Finder;
+
 if (file_exists(__DIR__ . '/../support/bootstrap.php')) {
     require_once __DIR__ . '/../support/bootstrap.php';
 }
@@ -31,6 +33,14 @@ class FeatureContext extends MinkContext implements ClosuredContextInterface
     public function getHookDefinitionResources()
     {
         return array(__DIR__ . '/../support/hooks.php');
+    }
+
+    public function getTranslationResources() {
+        if (file_exists(__DIR__ . '/../steps/i18n')) {
+            $finder = new Finder();
+            return $finder->files()->name('*.xliff')->in(__DIR__ . '/../steps/i18n');
+        }
+        return parent::getTranslationResources();
     }
 
     public function locatePath($path) {
