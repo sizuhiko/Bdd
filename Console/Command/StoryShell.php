@@ -3,7 +3,9 @@
 define('BEHAT_VERSION',         'DEV');
 define('CAKEBEHAT_ROOT',         dirname(__FILE__));
 
-require dirname(dirname(dirname(__FILE__))).DS.'vendor/autoload.php';
+if(file_exists(dirname(dirname(dirname(__FILE__))).DS.'vendor/autoload.php')) {
+	require dirname(dirname(dirname(__FILE__))).DS.'vendor/autoload.php';
+}
 
 App::uses('Model', 'Model');
 App::uses('ClassRegistry', 'Utility');
