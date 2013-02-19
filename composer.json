@@ -1,5 +1,6 @@
 {
     "name": "sizuhiko/Bdd",
+    "type": "cakephp-plugin",
     "description": "BddPlugin for CakePHP2",
     "authors": [
         {
@@ -13,55 +14,19 @@
             "url": "http://pear.phpunit.de"
         },
         {
-            "type": "pear",
-            "url": "http://pear.php.net"
-        },
-        {
-            "type": "package",
-            "package":{
-                "name": "hamcrest/Hamcrest",
-                "version": "1.1.0",
-                "dist": {
-                    "url": "http://hamcrest.googlecode.com/files/hamcrest-php-1.1.0.zip",
-                    "type": "zip"
-                },
-                "include-path": ["Hamcrest-1.1.0/"],
-                "autoload": {
-                    "classmap": ["Hamcrest-1.1.0/"]
-                }
-            }
-        },
-        {
-            "type": "package",
-            "package":{
-                "name": "sizuhiko/Spec-PHP",
-                "version": "0.9.5.3.dev",
-                "dist": {
-                    "url": "https://github.com/sizuhiko/Spec-PHP/zipball/0.9.5.3.dev",
-                    "type": "zip"
-                },
-                "source": {
-                    "url": "https://github.com/sizuhiko/Spec-PHP.git",
-                    "type": "git",
-                    "reference": "develop"
-                },
-                "autoload": {
-                    "psr-0": {"DrSlump": "library/"}
-                }
-            }
+            "type": "vcs",
+            "url": "https://github.com/sizuhiko/CommonContexts.git"
         },
         {
             "type": "vcs",
-            "url": "https://github.com/sizuhiko/CommonContexts.git"
+            "url": "https://github.com/sizuhiko/Spec-PHP.git"
         }
     ],    
     "require": {
+        "composer/installers": "*",
         "behat/mink-extension": "*",
-        "pear-phpunit/Object_Freezer": "*",
-        "pear-pear/Console_CommandLine": "*",
-        "hamcrest/Hamcrest": "*",
-        "sizuhiko/Spec-PHP": "*",
-        "behat/common-contexts": "dev-ChangeUriBasedComparison"
+        "sizuhiko/spec-php": "dev-develop",
+        "sizuhiko/common-contexts": "dev-ChangeUriBasedComparison"
     },
 
     "require-dev": { 

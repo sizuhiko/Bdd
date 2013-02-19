@@ -59,11 +59,54 @@ php composer.phar install --dev
 cd ..
 ```
 
-Then, add the following code in app/Config/bootstrap.php
+#### With A Multi-Framework Composer Library Installer 
+
+If you want to use 'A Multi-Framework Composer Library Installer'(https://github.com/composer/installers), then you should add repositories section in composer.json of your application.
+
+```json
+  "repositories": [
+    {
+        "type": "pear",
+        "url": "http://pear.phpunit.de"
+    },
+    {
+        "type": "vcs",
+        "url": "https://github.com/sizuhiko/CommonContexts.git"
+    },
+    {
+        "type": "vcs",
+        "url": "https://github.com/sizuhiko/Spec-PHP.git"
+    },
+    {
+        "type": "vcs",
+        "url": "git://github.com/sizuhiko/Bdd.git"
+    }    
+    # .... your application required repositories...
+  ],    
+
+  "require-dev": { 
+    "require-dev": {
+      "sizuhiko/Bdd": "dev-master",
+      # Add which your needed driver
+      "behat/mink-goutte-driver": "*",
+      "behat/mink-selenium-driver": "*",
+      "behat/mink-selenium2-driver": "*"
+      # ... your application required dependencies.
+    }
+  }
+```
+
+### Configuration
+
+#### Plugin load setting
+
+Add the following code in app/Config/bootstrap.php
 
 ```php
 CakePlugin::load('Bdd');
 ```
+
+#### Bake initial templates
 
 Next, the following commands are executed. (on root of CakePHP)
 ```sh
@@ -73,9 +116,7 @@ ls
 lib/Cake/Console/cake Bdd.init
 ```
 
-The initial install is an end.
-
-### Configuration
+#### Application root URL setting
 
 Setting your application root url into app/Config/behat.yml.
 ```yaml
