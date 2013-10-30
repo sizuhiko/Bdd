@@ -24,7 +24,7 @@
     ],    
     "require": {
         "composer/installers": "*",
-        "behat/mink-extension": "*",
+        "behat/mink-extension": "1.2.*@dev",
         "sizuhiko/spec-php": "dev-develop",
         "sizuhiko/common-contexts": "dev-ChangeUriBasedComparison"
     },
