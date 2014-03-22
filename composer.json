@@ -10,7 +10,7 @@
     ],
     "require": {
         "composer/installers": "*",
-        "behat/mink-extension": "1.2.*@dev",
+        "behat/mink-extension": "2.0.*@dev",
         "sizuhiko/spec-php": "0.9.6.*",
         "behat/common-contexts": "1.2.*@dev"
     },
