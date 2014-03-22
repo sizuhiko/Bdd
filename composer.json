@@ -1,5 +1,5 @@
 {
-    "name": "sizuhiko/Bdd",
+    "name": "sizuhiko/cakephp-bdd",
     "type": "cakephp-plugin",
     "description": "BddPlugin for CakePHP2",
     "authors": [
