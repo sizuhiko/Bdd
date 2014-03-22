@@ -20,5 +20,8 @@
         "behat/mink-selenium-driver": "*",
         "behat/mink-selenium2-driver": "*"
     },
+    "extra": {
+        "installer-name": "Bdd"
+    },
     "minimum-stability" : "dev"
 }
