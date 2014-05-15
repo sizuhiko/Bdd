@@ -66,18 +66,6 @@ If you want to use 'A Multi-Framework Composer Library Installer'(https://github
 ```json
   "repositories": [
     {
-        "type": "pear",
-        "url": "http://pear.phpunit.de"
-    },
-    {
-        "type": "vcs",
-        "url": "https://github.com/sizuhiko/CommonContexts.git"
-    },
-    {
-        "type": "vcs",
-        "url": "https://github.com/sizuhiko/Spec-PHP.git"
-    },
-    {
         "type": "vcs",
         "url": "git://github.com/sizuhiko/Bdd.git"
     }    

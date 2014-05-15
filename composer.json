@@ -8,25 +8,11 @@
             "email": "sizuhiko@gmail.com"
         }
     ],
-    "repositories": [
-        {
-            "type": "pear",
-            "url": "http://pear.phpunit.de"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/sizuhiko/CommonContexts.git"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/sizuhiko/Spec-PHP.git"
-        }
-    ],    
     "require": {
         "composer/installers": "*",
         "behat/mink-extension": "1.2.*@dev",
-        "sizuhiko/spec-php": "dev-develop",
-        "sizuhiko/common-contexts": "dev-ChangeUriBasedComparison"
+        "sizuhiko/spec-php": "0.9.6.*",
+        "behat/common-contexts": "1.2.*@dev"
     },
 
     "require-dev": { 
