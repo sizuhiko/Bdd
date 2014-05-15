@@ -72,15 +72,13 @@ If you want to use 'A Multi-Framework Composer Library Installer'(https://github
     # .... your application required repositories...
   ],    
 
-  "require-dev": { 
-    "require-dev": {
-      "sizuhiko/Bdd": "dev-master",
-      # Add which your needed driver
-      "behat/mink-goutte-driver": "*",
-      "behat/mink-selenium-driver": "*",
-      "behat/mink-selenium2-driver": "*"
-      # ... your application required dependencies.
-    }
+  "require-dev": {
+    "sizuhiko/Bdd": "dev-master",
+    # Add which your needed driver
+    "behat/mink-goutte-driver": "*",
+    "behat/mink-selenium-driver": "*",
+    "behat/mink-selenium2-driver": "*"
+    # ... your application required dependencies.
   }
 ```
 
