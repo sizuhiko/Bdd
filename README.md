@@ -82,6 +82,20 @@ If you want to use 'A Multi-Framework Composer Library Installer'(https://github
   }
 ```
 
+#### Minimum Stability
+
+If you don't set `dev` to Minimum Stability then you should append dependencies stabilities :
+
+```json
+    "require-dev": {
+        "sizuhiko/Bdd": "dev-develop",
+        # Add non-stable dependencies
+        "pear/console_commandline": "@dev",
+        "pear/pear_exception": "@dev"
+    }
+```
+
+
 ### Configuration
 
 #### Plugin load setting
